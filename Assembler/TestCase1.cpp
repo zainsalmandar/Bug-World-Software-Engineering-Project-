@@ -43,5 +43,5 @@ public:
 CppUnit::TestSuite suite;
 CppUnit::TestResult test1;
 suite.addTest( new CppUnit::TestCaller<Labels> ("Push_label",&Labels::Push_label));
-suite.addTest( new CppUnit::TestCaller<Labels> ("Push_goto",&Labels::Push_label));
+suite.addTest( new CppUnit::TestCaller<Labels> ("Push_goto",&Labels::Push_goto));
 suit.run(&test1);
