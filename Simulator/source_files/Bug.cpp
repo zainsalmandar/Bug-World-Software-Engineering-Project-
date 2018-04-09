@@ -28,7 +28,7 @@ tcolor Bug::get_color(){
   return color;
 }
 
-tsate Bug::get_state(){
+tstate Bug::get_state(){
   return state;
 }
 

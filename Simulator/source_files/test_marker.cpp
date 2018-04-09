@@ -3,18 +3,30 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-#include <cstdlib>
-#include <iostream>
-#include "allClasses.h"
 
+/* 
+ * File:   Test.cpp
+ * Author: bryann
+ *
+ * Created on April 9, 2018, 9:56 PM
+ */
+
+#include <cstdlib>
 
 using namespace std;
 
+/*
+ * 
+ */
+
+
+
+int main(int argc, char** argv) {
     
-virtual void Instruction::execute(Bug b){
+    //Test for Marker
     
-};
     
-virtual void Instruction::parse(string args){
-    
-};
+
+    return 0;
+}
+

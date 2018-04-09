@@ -21,8 +21,8 @@ FC=gfortran
 AS=as
 
 # Macros
-CND_PLATFORM=GNU-MacOSX
-CND_DLIB_EXT=dylib
+CND_PLATFORM=GNU-Linux
+CND_DLIB_EXT=so
 CND_CONF=Debug
 CND_DISTDIR=dist
 CND_BUILDDIR=build
@@ -49,7 +49,8 @@ OBJECTFILES= \
 	${OBJECTDIR}/source_files/Instruction.o \
 	${OBJECTDIR}/source_files/Marker.o \
 	${OBJECTDIR}/source_files/Structs.o \
-	${OBJECTDIR}/source_files/World.o
+	${OBJECTDIR}/source_files/World.o \
+	${OBJECTDIR}/source_files/test_marker.o
 
 # Test Directory
 TESTDIR=${CND_BUILDDIR}/${CND_CONF}/${CND_PLATFORM}/tests
@@ -84,11 +85,11 @@ LDLIBSOPTIONS=
 
 # Build Targets
 .build-conf: ${BUILD_SUBPROJECTS}
-	"${MAKE}"  -f nbproject/Makefile-${CND_CONF}.mk ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/bugworld
+	"${MAKE}"  -f nbproject/Makefile-${CND_CONF}.mk ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/simulator
 
-${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/bugworld: ${OBJECTFILES}
+${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/simulator: ${OBJECTFILES}
 	${MKDIR} -p ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}
-	${LINK.cc} -o ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/bugworld ${OBJECTFILES} ${LDLIBSOPTIONS}
+	${LINK.cc} -o ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/simulator ${OBJECTFILES} ${LDLIBSOPTIONS}
 
 ${OBJECTDIR}/source_files/Bug.o: source_files/Bug.cpp
 	${MKDIR} -p ${OBJECTDIR}/source_files
@@ -164,6 +165,11 @@ ${OBJECTDIR}/source_files/World.o: source_files/World.cpp
 	${MKDIR} -p ${OBJECTDIR}/source_files
 	${RM} "$@.d"
 	$(COMPILE.cc) -g -std=c++11 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/source_files/World.o source_files/World.cpp
+
+${OBJECTDIR}/source_files/test_marker.o: source_files/test_marker.cpp
+	${MKDIR} -p ${OBJECTDIR}/source_files
+	${RM} "$@.d"
+	$(COMPILE.cc) -g -std=c++11 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/source_files/test_marker.o source_files/test_marker.cpp
 
 # Subprojects
 .build-subprojects:
@@ -398,6 +404,19 @@ ${OBJECTDIR}/source_files/World_nomain.o: ${OBJECTDIR}/source_files/World.o sour
 	    $(COMPILE.cc) -g -std=c++11 -Dmain=__nomain -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/source_files/World_nomain.o source_files/World.cpp;\
 	else  \
 	    ${CP} ${OBJECTDIR}/source_files/World.o ${OBJECTDIR}/source_files/World_nomain.o;\
+	fi
+
+${OBJECTDIR}/source_files/test_marker_nomain.o: ${OBJECTDIR}/source_files/test_marker.o source_files/test_marker.cpp 
+	${MKDIR} -p ${OBJECTDIR}/source_files
+	@NMOUTPUT=`${NM} ${OBJECTDIR}/source_files/test_marker.o`; \
+	if (echo "$$NMOUTPUT" | ${GREP} '|main$$') || \
+	   (echo "$$NMOUTPUT" | ${GREP} 'T main$$') || \
+	   (echo "$$NMOUTPUT" | ${GREP} 'T _main$$'); \
+	then  \
+	    ${RM} "$@.d";\
+	    $(COMPILE.cc) -g -std=c++11 -Dmain=__nomain -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/source_files/test_marker_nomain.o source_files/test_marker.cpp;\
+	else  \
+	    ${CP} ${OBJECTDIR}/source_files/test_marker.o ${OBJECTDIR}/source_files/test_marker_nomain.o;\
 	fi
 
 # Run Test Targets

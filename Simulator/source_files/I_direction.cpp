@@ -1,7 +1,6 @@
 #include <cstdlib>
 #include <iostream>
-#include "../header_files/Instruction.h"
-#include "../header_files/Bug.h"
+#include "allClasses.h"
 
 using namespace std;
 
