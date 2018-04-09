@@ -1,5 +1,6 @@
 #include "Labels.h"
 #include "string"
+
 using namespace std;
 
 class Labels: public CppUnit:Test {
@@ -26,15 +27,16 @@ public:
 
     void Push_label() {
 
-    CPPUNIT_ASSERT(resolve_lineof(*x_4) == add_goto(*x4,*x_1));
-    CPPUNIT_ASSERT(resolve_lineof(*x_5) == add_goto(*x5,*x_2));
-    CPPUNIT_ASSERT(resolve_lineof(*x_6) == add_goto(*x6,*x_3));
+    CPPUNIT_ASSERT(resolve_lineof(*x_4) == add_label(*x4,*x_1));
+    CPPUNIT_ASSERT(resolve_lineof(*x_5) == add_label(*x5,*x_2));
+    CPPUNIT_ASSERT(resolve_lineof(*x_6) == add_label(*x6,*x_3));
     }
 
     void Push_goto() {
     CPPUNIT_ASSERT(resolve_goto(*x_1) == add_goto(*x4,*x_1));
     CPPUNIT_ASSERT(resolve_goto(*x_2) == add_goto(*x5,*x_2));
     CPPUNIT_ASSERT(resolve_goto(*x_3) == add_goto(*x6,*x_3));
+    exception line_of(!*x_4)== error("Does not exist");
     }
 };
 
