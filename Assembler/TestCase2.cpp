@@ -33,6 +33,6 @@ private:
 };
 CppUnit::TestSuite suite;
 CppUnit::TestResult test2;
-suite.addTest( new I_*::TestCaller<Labels> ("read",&Labels::Push_label));
-suite.addTest( new I_*::TestCaller<Labels> ("default",&Labels::Push_label));
+suite.addTest( new I_*::TestCaller<Labels> ("read",&Labels::read));
+suite.addTest( new I_*::TestCaller<Labels> ("default",&Labels::default));
 suit.run(&test2);
