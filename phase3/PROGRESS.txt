@@ -1,0 +1,41 @@
+Team 6: Milen Vitanov and Steven Abreu
+=========================================
+
+What we had on phase_2: 
+========================
+The previous group had worked on the assembler and simulator. 
+- all the classes for the assembler defined and assembler sequence up to export was done.
+- the instructions for the assembler could be parsed.
+- test cases for all instructions 
+- simulator instructions' skeleton
+
+
+What we improved:
+=================
+
+1. made some minor changes to the simulator core classes to make it consistent (execute_cycle() remains to be implemented)
+
+2. divided all the instruction classes in separate header files
+
+3. removing the constructors of the instructions (parse() is setting the properties of the classes)
+
+4. implemented the divided header files for the simulator instructions (all functions)  
+
+
+Problems carreid on from phase 2:
+==================================
+- some tests for assembler instructions(testInstructions) and testProgram fail
+
+ 
+Possible TODOs for next team:
+==============================
+- See why the tests for instructions and program (assembler) fails and provide fixes
+- Implement the read() function in all instructions
+- Implement the output() function of Program
+- Implement execute_cycle() method of World
+
+Notes:  
+=======
+-there is a librarys of the asm executable, as for simplifying the testing. Therefore
+the library is only a testing component and not to be mistaken with a real library.
+-the simulator program and instructions are not complete and will not compile. 
