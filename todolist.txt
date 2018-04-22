@@ -1,0 +1,3 @@
+1. Writing test cases for Simulator
+2. Default Constructors for Simulator Instructions
+3. Execute_cycle() in World.cpp
