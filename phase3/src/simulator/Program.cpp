@@ -90,12 +90,12 @@ void Program::step(Bug b){
         std::cout << std::ifstream(s.c_str()).rdbuf(); }
     
 //read not defined yet 
-void step(extern string s) {
+void step(extern std::string s) {
     /* tstate get_state(s) { 
     while (read("  ")) { read not defined yet
     x = read(s);
     x+=1;
     }}} */ }
 
-void execute(extern string s) {} 
+void execute(extern std::string s) {} 
 //has to be defined
