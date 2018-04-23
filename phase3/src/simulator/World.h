@@ -35,9 +35,8 @@ public:
     void error(const std::string& msg) const;
     void log(std::string& format) const;
     
-    /*int get_progid(std::string s) {
-        std::system(s.c_str());
-        std::cout << std::ifstream(s).rdbuf();
-    }*/
+    int get_progid(extern std::string s); //parse() has to be implemented
+    void step(extern std::string s); //read() has to be implemented
+    void execute(extern std::string s); //has to be implemented
 };
 #endif /* WORLD_H */
