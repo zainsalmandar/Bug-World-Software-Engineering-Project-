@@ -6,11 +6,11 @@
 class I_directionTest : public CPPUNIT_NS::TestFixture {
     CPPUNIT_TEST_SUITE(I_directionTest);
 
-    CPPUNIT_TEST(testDConstructor);
+    /*CPPUNIT_TEST(testDConstructor);
     CPPUNIT_TEST(testPConstructor);
     CPPUNIT_TEST(testExecute);
     CPPUNIT_TEST(testParse);
-    CPPUNIT_TEST_SUITE_END();
+    CPPUNIT_TEST_SUITE_END();*/
 
 public:
     I_directionTest(){};

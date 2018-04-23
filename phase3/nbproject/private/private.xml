@@ -16,4 +16,10 @@
             <file>file:/home/mvitanov/Desktop/phase4/phase3/src/simulator/World.h</file>
         </group>
     </open-files>
+    <preferences xmlns="http://www.netbeans.org/ns/auxiliary-configuration-preferences/1">
+        <module name="org-netbeans-modules-cnd-discovery">
+            <property name="rootFolder" value="/home/mvitanov/Desktop/phase4/phase3"/>
+            <property name="exec-log-file" value="/home/mvitanov/Desktop/phase4/phase3"/>
+        </module>
+    </preferences>
 </project-private>

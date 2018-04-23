@@ -1,8 +1,8 @@
 
 #include <iostream>
+#include <cstring>
 #include <exception>
 #include <vector>
-#include <cstring>
 
 #include "I_direction.h"
 

@@ -7,7 +7,7 @@
 #include "Program.h"
 
 Program::Program(const std::string& filename, int progId){
-	id = progId;
+	/*id = progId;
 
 	std::ifstream in(filename);
 	std::string s;
@@ -72,15 +72,15 @@ Program::Program(const std::string& filename, int progId){
             }
         }
     }
-    id++;
+    id++;*/
 }
 
 void Program::step(Bug b){
-	if (!b.is_dead() && b.get_progid() == id){
+	/*if (!b.is_dead() && b.get_progid() == id){
 		for(int i=0;i<instructions.size();i++){
 			instructions[i].execute();
 		}
 		return;
 	}
-	return;
+	return;*/
 }

@@ -4,6 +4,7 @@
 #include <stdexcept>
 #include <string>
 #include "World.h"
+#include "Bug.h"
 
 int World::log_num = 0;
 
@@ -243,7 +244,7 @@ int World::black_count() const {
 }
 
 color_t* World::winner() const {
-    color_t *win;
+    color_t *win = new color_t;
     if (this->red_food() > this->black_food())
         win->val = 1;
     else if (this->red_food() < this->black_food())

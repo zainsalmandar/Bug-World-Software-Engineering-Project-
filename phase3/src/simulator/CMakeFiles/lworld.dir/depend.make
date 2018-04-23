@@ -8,5 +8,4 @@ src/simulator/CMakeFiles/lworld.dir/World.cpp.o: src/simulator/Marker.h
 src/simulator/CMakeFiles/lworld.dir/World.cpp.o: src/simulator/Program.h
 src/simulator/CMakeFiles/lworld.dir/World.cpp.o: src/simulator/World.cpp
 src/simulator/CMakeFiles/lworld.dir/World.cpp.o: src/simulator/World.h
-src/simulator/CMakeFiles/lworld.dir/World.cpp.o: src/simulator/commands/Instruction.h
 

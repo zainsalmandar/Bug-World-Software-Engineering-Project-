@@ -19,9 +19,17 @@ class I_direction: public Instruction {
 	      state_t x;
 	      state_t y;
     public:
-        I_direction() : Instruction() {d = NULL; x = NULL; y = NULL;}
-        I_direction(World &w) : Instruction(w) {d = NULL; x = NULL; y = NULL;}
-	    void execute(Bug& b);
+        I_direction() : Instruction() {
+            d.val = 0; 
+            x.val = 0;
+            y.val = 0;
+        }
+        I_direction(World &w) : Instruction(w) {
+            d.val = 0; 
+            x.val = 0;
+            y.val = 0;
+        }
+	void execute(Bug& b);
         void parse(std::string& args);
 };
 

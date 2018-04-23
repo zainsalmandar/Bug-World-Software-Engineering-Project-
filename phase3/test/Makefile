@@ -122,36 +122,6 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
-test/CMakeFiles/testI_direction.dir/rule:
-	cd /home/mvitanov/Desktop/phase4/phase3 && $(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/testI_direction.dir/rule
-.PHONY : test/CMakeFiles/testI_direction.dir/rule
-
-# Convenience name for target.
-testI_direction: test/CMakeFiles/testI_direction.dir/rule
-
-.PHONY : testI_direction
-
-# fast build rule for target.
-testI_direction/fast:
-	cd /home/mvitanov/Desktop/phase4/phase3 && $(MAKE) -f test/CMakeFiles/testI_direction.dir/build.make test/CMakeFiles/testI_direction.dir/build
-.PHONY : testI_direction/fast
-
-# Convenience name for target.
-test/CMakeFiles/testProgram.dir/rule:
-	cd /home/mvitanov/Desktop/phase4/phase3 && $(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/testProgram.dir/rule
-.PHONY : test/CMakeFiles/testProgram.dir/rule
-
-# Convenience name for target.
-testProgram: test/CMakeFiles/testProgram.dir/rule
-
-.PHONY : testProgram
-
-# fast build rule for target.
-testProgram/fast:
-	cd /home/mvitanov/Desktop/phase4/phase3 && $(MAKE) -f test/CMakeFiles/testProgram.dir/build.make test/CMakeFiles/testProgram.dir/build
-.PHONY : testProgram/fast
-
-# Convenience name for target.
 test/CMakeFiles/testInstructions.dir/rule:
 	cd /home/mvitanov/Desktop/phase4/phase3 && $(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/testInstructions.dir/rule
 .PHONY : test/CMakeFiles/testInstructions.dir/rule
@@ -182,6 +152,21 @@ testCell/fast:
 .PHONY : testCell/fast
 
 # Convenience name for target.
+test/CMakeFiles/testProgram.dir/rule:
+	cd /home/mvitanov/Desktop/phase4/phase3 && $(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/testProgram.dir/rule
+.PHONY : test/CMakeFiles/testProgram.dir/rule
+
+# Convenience name for target.
+testProgram: test/CMakeFiles/testProgram.dir/rule
+
+.PHONY : testProgram
+
+# fast build rule for target.
+testProgram/fast:
+	cd /home/mvitanov/Desktop/phase4/phase3 && $(MAKE) -f test/CMakeFiles/testProgram.dir/build.make test/CMakeFiles/testProgram.dir/build
+.PHONY : testProgram/fast
+
+# Convenience name for target.
 test/CMakeFiles/testBug.dir/rule:
 	cd /home/mvitanov/Desktop/phase4/phase3 && $(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/testBug.dir/rule
 .PHONY : test/CMakeFiles/testBug.dir/rule
@@ -210,21 +195,6 @@ testMarker: test/CMakeFiles/testMarker.dir/rule
 testMarker/fast:
 	cd /home/mvitanov/Desktop/phase4/phase3 && $(MAKE) -f test/CMakeFiles/testMarker.dir/build.make test/CMakeFiles/testMarker.dir/build
 .PHONY : testMarker/fast
-
-# Convenience name for target.
-test/CMakeFiles/testWorld.dir/rule:
-	cd /home/mvitanov/Desktop/phase4/phase3 && $(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/testWorld.dir/rule
-.PHONY : test/CMakeFiles/testWorld.dir/rule
-
-# Convenience name for target.
-testWorld: test/CMakeFiles/testWorld.dir/rule
-
-.PHONY : testWorld
-
-# fast build rule for target.
-testWorld/fast:
-	cd /home/mvitanov/Desktop/phase4/phase3 && $(MAKE) -f test/CMakeFiles/testWorld.dir/build.make test/CMakeFiles/testWorld.dir/build
-.PHONY : testWorld/fast
 
 assembler/TestInstructions.o: assembler/TestInstructions.cpp.o
 
@@ -388,60 +358,6 @@ simulator/CellTestRunner.cpp.s:
 	cd /home/mvitanov/Desktop/phase4/phase3 && $(MAKE) -f test/CMakeFiles/testCell.dir/build.make test/CMakeFiles/testCell.dir/simulator/CellTestRunner.cpp.s
 .PHONY : simulator/CellTestRunner.cpp.s
 
-simulator/I_directionTest.o: simulator/I_directionTest.cpp.o
-
-.PHONY : simulator/I_directionTest.o
-
-# target to build an object file
-simulator/I_directionTest.cpp.o:
-	cd /home/mvitanov/Desktop/phase4/phase3 && $(MAKE) -f test/CMakeFiles/testI_direction.dir/build.make test/CMakeFiles/testI_direction.dir/simulator/I_directionTest.cpp.o
-.PHONY : simulator/I_directionTest.cpp.o
-
-simulator/I_directionTest.i: simulator/I_directionTest.cpp.i
-
-.PHONY : simulator/I_directionTest.i
-
-# target to preprocess a source file
-simulator/I_directionTest.cpp.i:
-	cd /home/mvitanov/Desktop/phase4/phase3 && $(MAKE) -f test/CMakeFiles/testI_direction.dir/build.make test/CMakeFiles/testI_direction.dir/simulator/I_directionTest.cpp.i
-.PHONY : simulator/I_directionTest.cpp.i
-
-simulator/I_directionTest.s: simulator/I_directionTest.cpp.s
-
-.PHONY : simulator/I_directionTest.s
-
-# target to generate assembly for a file
-simulator/I_directionTest.cpp.s:
-	cd /home/mvitanov/Desktop/phase4/phase3 && $(MAKE) -f test/CMakeFiles/testI_direction.dir/build.make test/CMakeFiles/testI_direction.dir/simulator/I_directionTest.cpp.s
-.PHONY : simulator/I_directionTest.cpp.s
-
-simulator/I_directionTestRunner.o: simulator/I_directionTestRunner.cpp.o
-
-.PHONY : simulator/I_directionTestRunner.o
-
-# target to build an object file
-simulator/I_directionTestRunner.cpp.o:
-	cd /home/mvitanov/Desktop/phase4/phase3 && $(MAKE) -f test/CMakeFiles/testI_direction.dir/build.make test/CMakeFiles/testI_direction.dir/simulator/I_directionTestRunner.cpp.o
-.PHONY : simulator/I_directionTestRunner.cpp.o
-
-simulator/I_directionTestRunner.i: simulator/I_directionTestRunner.cpp.i
-
-.PHONY : simulator/I_directionTestRunner.i
-
-# target to preprocess a source file
-simulator/I_directionTestRunner.cpp.i:
-	cd /home/mvitanov/Desktop/phase4/phase3 && $(MAKE) -f test/CMakeFiles/testI_direction.dir/build.make test/CMakeFiles/testI_direction.dir/simulator/I_directionTestRunner.cpp.i
-.PHONY : simulator/I_directionTestRunner.cpp.i
-
-simulator/I_directionTestRunner.s: simulator/I_directionTestRunner.cpp.s
-
-.PHONY : simulator/I_directionTestRunner.s
-
-# target to generate assembly for a file
-simulator/I_directionTestRunner.cpp.s:
-	cd /home/mvitanov/Desktop/phase4/phase3 && $(MAKE) -f test/CMakeFiles/testI_direction.dir/build.make test/CMakeFiles/testI_direction.dir/simulator/I_directionTestRunner.cpp.s
-.PHONY : simulator/I_directionTestRunner.cpp.s
-
 simulator/MarkerTest.o: simulator/MarkerTest.cpp.o
 
 .PHONY : simulator/MarkerTest.o
@@ -496,60 +412,6 @@ simulator/MarkerTestRunner.cpp.s:
 	cd /home/mvitanov/Desktop/phase4/phase3 && $(MAKE) -f test/CMakeFiles/testMarker.dir/build.make test/CMakeFiles/testMarker.dir/simulator/MarkerTestRunner.cpp.s
 .PHONY : simulator/MarkerTestRunner.cpp.s
 
-simulator/WorldTest.o: simulator/WorldTest.cpp.o
-
-.PHONY : simulator/WorldTest.o
-
-# target to build an object file
-simulator/WorldTest.cpp.o:
-	cd /home/mvitanov/Desktop/phase4/phase3 && $(MAKE) -f test/CMakeFiles/testWorld.dir/build.make test/CMakeFiles/testWorld.dir/simulator/WorldTest.cpp.o
-.PHONY : simulator/WorldTest.cpp.o
-
-simulator/WorldTest.i: simulator/WorldTest.cpp.i
-
-.PHONY : simulator/WorldTest.i
-
-# target to preprocess a source file
-simulator/WorldTest.cpp.i:
-	cd /home/mvitanov/Desktop/phase4/phase3 && $(MAKE) -f test/CMakeFiles/testWorld.dir/build.make test/CMakeFiles/testWorld.dir/simulator/WorldTest.cpp.i
-.PHONY : simulator/WorldTest.cpp.i
-
-simulator/WorldTest.s: simulator/WorldTest.cpp.s
-
-.PHONY : simulator/WorldTest.s
-
-# target to generate assembly for a file
-simulator/WorldTest.cpp.s:
-	cd /home/mvitanov/Desktop/phase4/phase3 && $(MAKE) -f test/CMakeFiles/testWorld.dir/build.make test/CMakeFiles/testWorld.dir/simulator/WorldTest.cpp.s
-.PHONY : simulator/WorldTest.cpp.s
-
-simulator/WorldTestRunner.o: simulator/WorldTestRunner.cpp.o
-
-.PHONY : simulator/WorldTestRunner.o
-
-# target to build an object file
-simulator/WorldTestRunner.cpp.o:
-	cd /home/mvitanov/Desktop/phase4/phase3 && $(MAKE) -f test/CMakeFiles/testWorld.dir/build.make test/CMakeFiles/testWorld.dir/simulator/WorldTestRunner.cpp.o
-.PHONY : simulator/WorldTestRunner.cpp.o
-
-simulator/WorldTestRunner.i: simulator/WorldTestRunner.cpp.i
-
-.PHONY : simulator/WorldTestRunner.i
-
-# target to preprocess a source file
-simulator/WorldTestRunner.cpp.i:
-	cd /home/mvitanov/Desktop/phase4/phase3 && $(MAKE) -f test/CMakeFiles/testWorld.dir/build.make test/CMakeFiles/testWorld.dir/simulator/WorldTestRunner.cpp.i
-.PHONY : simulator/WorldTestRunner.cpp.i
-
-simulator/WorldTestRunner.s: simulator/WorldTestRunner.cpp.s
-
-.PHONY : simulator/WorldTestRunner.s
-
-# target to generate assembly for a file
-simulator/WorldTestRunner.cpp.s:
-	cd /home/mvitanov/Desktop/phase4/phase3 && $(MAKE) -f test/CMakeFiles/testWorld.dir/build.make test/CMakeFiles/testWorld.dir/simulator/WorldTestRunner.cpp.s
-.PHONY : simulator/WorldTestRunner.cpp.s
-
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -558,14 +420,12 @@ help:
 	@echo "... depend"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
-	@echo "... testI_direction"
-	@echo "... test"
-	@echo "... testProgram"
 	@echo "... testInstructions"
 	@echo "... testCell"
+	@echo "... testProgram"
+	@echo "... test"
 	@echo "... testBug"
 	@echo "... testMarker"
-	@echo "... testWorld"
 	@echo "... assembler/TestInstructions.o"
 	@echo "... assembler/TestInstructions.i"
 	@echo "... assembler/TestInstructions.s"
@@ -584,24 +444,12 @@ help:
 	@echo "... simulator/CellTestRunner.o"
 	@echo "... simulator/CellTestRunner.i"
 	@echo "... simulator/CellTestRunner.s"
-	@echo "... simulator/I_directionTest.o"
-	@echo "... simulator/I_directionTest.i"
-	@echo "... simulator/I_directionTest.s"
-	@echo "... simulator/I_directionTestRunner.o"
-	@echo "... simulator/I_directionTestRunner.i"
-	@echo "... simulator/I_directionTestRunner.s"
 	@echo "... simulator/MarkerTest.o"
 	@echo "... simulator/MarkerTest.i"
 	@echo "... simulator/MarkerTest.s"
 	@echo "... simulator/MarkerTestRunner.o"
 	@echo "... simulator/MarkerTestRunner.i"
 	@echo "... simulator/MarkerTestRunner.s"
-	@echo "... simulator/WorldTest.o"
-	@echo "... simulator/WorldTest.i"
-	@echo "... simulator/WorldTest.s"
-	@echo "... simulator/WorldTestRunner.o"
-	@echo "... simulator/WorldTestRunner.i"
-	@echo "... simulator/WorldTestRunner.s"
 .PHONY : help
 
 

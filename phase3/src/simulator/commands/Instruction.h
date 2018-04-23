@@ -15,9 +15,9 @@ class Instruction {
     protected:
         World w;
     public:
-        Instruction() {this->w = NULL;}
-        Instruction(World& newworld) {w = newworld;}
-        void setWorld(World& newworld) {w = newworld;}
+        Instruction() : w(World()) {}
+        Instruction(World newworld) {w = newworld;}
+        void setWorld(World newworld) {w = newworld;}
         World getWorld() {return w;}
         virtual void parse(std::string& args) = 0;
         virtual void execute(Bug& b) = 0;

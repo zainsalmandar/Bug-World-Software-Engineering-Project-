@@ -181,21 +181,6 @@
 },
 {
   "directory": "/home/mvitanov/Desktop/phase4/phase3/test",
-  "command": "/usr/bin/g++   -I/home/mvitanov/Desktop/phase4/phase3/src -I/home/mvitanov/Desktop/phase4/phase3/src/assembler -I/home/mvitanov/Desktop/phase4/phase3/src/assembler/commands -I/home/mvitanov/Desktop/phase4/phase3/src/simulator  -g -O0 -std=c++11 -Wall -fprofile-arcs -ftest-coverage -g3 -gdwarf-2   -Wall -Werror -o CMakeFiles/testI_direction.dir/simulator/I_directionTestRunner.cpp.o -c /home/mvitanov/Desktop/phase4/phase3/test/simulator/I_directionTestRunner.cpp",
-  "file": "/home/mvitanov/Desktop/phase4/phase3/test/simulator/I_directionTestRunner.cpp"
-},
-{
-  "directory": "/home/mvitanov/Desktop/phase4/phase3/test",
-  "command": "/usr/bin/g++   -I/home/mvitanov/Desktop/phase4/phase3/src -I/home/mvitanov/Desktop/phase4/phase3/src/assembler -I/home/mvitanov/Desktop/phase4/phase3/src/assembler/commands -I/home/mvitanov/Desktop/phase4/phase3/src/simulator  -g -O0 -std=c++11 -Wall -fprofile-arcs -ftest-coverage -g3 -gdwarf-2   -Wall -Werror -o CMakeFiles/testI_direction.dir/simulator/I_directionTest.cpp.o -c /home/mvitanov/Desktop/phase4/phase3/test/simulator/I_directionTest.cpp",
-  "file": "/home/mvitanov/Desktop/phase4/phase3/test/simulator/I_directionTest.cpp"
-},
-{
-  "directory": "/home/mvitanov/Desktop/phase4/phase3/test",
-  "command": "/usr/bin/g++   -I/home/mvitanov/Desktop/phase4/phase3/src -I/home/mvitanov/Desktop/phase4/phase3/src/assembler -I/home/mvitanov/Desktop/phase4/phase3/src/assembler/commands -I/home/mvitanov/Desktop/phase4/phase3/src/simulator  -g -O0 -std=c++11 -Wall -fprofile-arcs -ftest-coverage -g3 -gdwarf-2   -Wall -Werror -o CMakeFiles/testProgram.dir/assembler/TestProgram.cpp.o -c /home/mvitanov/Desktop/phase4/phase3/test/assembler/TestProgram.cpp",
-  "file": "/home/mvitanov/Desktop/phase4/phase3/test/assembler/TestProgram.cpp"
-},
-{
-  "directory": "/home/mvitanov/Desktop/phase4/phase3/test",
   "command": "/usr/bin/g++   -I/home/mvitanov/Desktop/phase4/phase3/src -I/home/mvitanov/Desktop/phase4/phase3/src/assembler -I/home/mvitanov/Desktop/phase4/phase3/src/assembler/commands -I/home/mvitanov/Desktop/phase4/phase3/src/simulator  -g -O0 -std=c++11 -Wall -fprofile-arcs -ftest-coverage -g3 -gdwarf-2   -Wall -Werror -o CMakeFiles/testInstructions.dir/assembler/TestInstructions.cpp.o -c /home/mvitanov/Desktop/phase4/phase3/test/assembler/TestInstructions.cpp",
   "file": "/home/mvitanov/Desktop/phase4/phase3/test/assembler/TestInstructions.cpp"
 },
@@ -208,6 +193,11 @@
   "directory": "/home/mvitanov/Desktop/phase4/phase3/test",
   "command": "/usr/bin/g++   -I/home/mvitanov/Desktop/phase4/phase3/src -I/home/mvitanov/Desktop/phase4/phase3/src/assembler -I/home/mvitanov/Desktop/phase4/phase3/src/assembler/commands -I/home/mvitanov/Desktop/phase4/phase3/src/simulator  -g -O0 -std=c++11 -Wall -fprofile-arcs -ftest-coverage -g3 -gdwarf-2   -Wall -Werror -o CMakeFiles/testCell.dir/simulator/CellTest.cpp.o -c /home/mvitanov/Desktop/phase4/phase3/test/simulator/CellTest.cpp",
   "file": "/home/mvitanov/Desktop/phase4/phase3/test/simulator/CellTest.cpp"
+},
+{
+  "directory": "/home/mvitanov/Desktop/phase4/phase3/test",
+  "command": "/usr/bin/g++   -I/home/mvitanov/Desktop/phase4/phase3/src -I/home/mvitanov/Desktop/phase4/phase3/src/assembler -I/home/mvitanov/Desktop/phase4/phase3/src/assembler/commands -I/home/mvitanov/Desktop/phase4/phase3/src/simulator  -g -O0 -std=c++11 -Wall -fprofile-arcs -ftest-coverage -g3 -gdwarf-2   -Wall -Werror -o CMakeFiles/testProgram.dir/assembler/TestProgram.cpp.o -c /home/mvitanov/Desktop/phase4/phase3/test/assembler/TestProgram.cpp",
+  "file": "/home/mvitanov/Desktop/phase4/phase3/test/assembler/TestProgram.cpp"
 },
 {
   "directory": "/home/mvitanov/Desktop/phase4/phase3/test",
@@ -228,15 +218,5 @@
   "directory": "/home/mvitanov/Desktop/phase4/phase3/test",
   "command": "/usr/bin/g++   -I/home/mvitanov/Desktop/phase4/phase3/src -I/home/mvitanov/Desktop/phase4/phase3/src/assembler -I/home/mvitanov/Desktop/phase4/phase3/src/assembler/commands -I/home/mvitanov/Desktop/phase4/phase3/src/simulator  -g -O0 -std=c++11 -Wall -fprofile-arcs -ftest-coverage -g3 -gdwarf-2   -Wall -Werror -o CMakeFiles/testMarker.dir/simulator/MarkerTest.cpp.o -c /home/mvitanov/Desktop/phase4/phase3/test/simulator/MarkerTest.cpp",
   "file": "/home/mvitanov/Desktop/phase4/phase3/test/simulator/MarkerTest.cpp"
-},
-{
-  "directory": "/home/mvitanov/Desktop/phase4/phase3/test",
-  "command": "/usr/bin/g++   -I/home/mvitanov/Desktop/phase4/phase3/src -I/home/mvitanov/Desktop/phase4/phase3/src/assembler -I/home/mvitanov/Desktop/phase4/phase3/src/assembler/commands -I/home/mvitanov/Desktop/phase4/phase3/src/simulator  -g -O0 -std=c++11 -Wall -fprofile-arcs -ftest-coverage -g3 -gdwarf-2   -Wall -Werror -o CMakeFiles/testWorld.dir/simulator/WorldTestRunner.cpp.o -c /home/mvitanov/Desktop/phase4/phase3/test/simulator/WorldTestRunner.cpp",
-  "file": "/home/mvitanov/Desktop/phase4/phase3/test/simulator/WorldTestRunner.cpp"
-},
-{
-  "directory": "/home/mvitanov/Desktop/phase4/phase3/test",
-  "command": "/usr/bin/g++   -I/home/mvitanov/Desktop/phase4/phase3/src -I/home/mvitanov/Desktop/phase4/phase3/src/assembler -I/home/mvitanov/Desktop/phase4/phase3/src/assembler/commands -I/home/mvitanov/Desktop/phase4/phase3/src/simulator  -g -O0 -std=c++11 -Wall -fprofile-arcs -ftest-coverage -g3 -gdwarf-2   -Wall -Werror -o CMakeFiles/testWorld.dir/simulator/WorldTest.cpp.o -c /home/mvitanov/Desktop/phase4/phase3/test/simulator/WorldTest.cpp",
-  "file": "/home/mvitanov/Desktop/phase4/phase3/test/simulator/WorldTest.cpp"
 }
 ]

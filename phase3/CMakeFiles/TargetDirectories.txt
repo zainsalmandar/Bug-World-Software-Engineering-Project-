@@ -23,11 +23,9 @@
 /home/mvitanov/Desktop/phase4/phase3/src/simulator/commands/CMakeFiles/test.dir
 /home/mvitanov/Desktop/phase4/phase3/test/CMakeFiles/rebuild_cache.dir
 /home/mvitanov/Desktop/phase4/phase3/test/CMakeFiles/edit_cache.dir
-/home/mvitanov/Desktop/phase4/phase3/test/CMakeFiles/testI_direction.dir
-/home/mvitanov/Desktop/phase4/phase3/test/CMakeFiles/test.dir
-/home/mvitanov/Desktop/phase4/phase3/test/CMakeFiles/testProgram.dir
 /home/mvitanov/Desktop/phase4/phase3/test/CMakeFiles/testInstructions.dir
 /home/mvitanov/Desktop/phase4/phase3/test/CMakeFiles/testCell.dir
+/home/mvitanov/Desktop/phase4/phase3/test/CMakeFiles/testProgram.dir
+/home/mvitanov/Desktop/phase4/phase3/test/CMakeFiles/test.dir
 /home/mvitanov/Desktop/phase4/phase3/test/CMakeFiles/testBug.dir
 /home/mvitanov/Desktop/phase4/phase3/test/CMakeFiles/testMarker.dir
-/home/mvitanov/Desktop/phase4/phase3/test/CMakeFiles/testWorld.dir

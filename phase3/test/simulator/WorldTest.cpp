@@ -1,13 +1,13 @@
 #include "WorldTest.h"
-#include ".../../src/simulator/World.h"
+#include "../../src/simulator/World.h"
 
 CPPUNIT_TEST_SUITE_REGISTRATION(WorldTest);
 
 void WorldTest::testLoad() {
     World testWorld;
-    std::string file1 = 'doesNotExist1.txt';
-    std::string file2 = 'doesNotExist2.txt';
-    std::string file3 = 'doesNotExist3.txt';
+    std::string file1 = "doesNotExist1.txt";
+    std::string file2 = "doesNotExist2.txt";
+    std::string file3 = "doesNotExist3.txt";
     bool exceptionThrown = false;
     
     try{

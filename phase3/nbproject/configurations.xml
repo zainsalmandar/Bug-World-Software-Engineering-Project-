@@ -74,7 +74,9 @@
         <rebuildPropChanged>false</rebuildPropChanged>
       </toolsSet>
       <flagsDictionary>
-        <element flagsID="0" commonFlags="-std=c++11"/>
+        <element flagsID="0"
+                 commonFlags="-mtune=generic -march=x86-64 -std=c++11 -fstack-protector-strong"/>
+        <element flagsID="1" commonFlags="-std=c++11"/>
       </flagsDictionary>
       <codeAssistance>
       </codeAssistance>
@@ -85,9 +87,7 @@
           <cleanCommand>${MAKE} -f Makefile clean</cleanCommand>
           <executablePath></executablePath>
           <ccTool>
-            <incDir>
-              <pElem>src</pElem>
-            </incDir>
+            <standard>8</standard>
           </ccTool>
         </makeTool>
         <preBuild>
@@ -95,17 +95,24 @@
           <preBuildCommand>${CMAKE} -G "Unix Makefiles" -DCMAKE_BUILD_TYPE=Debug -DCMAKE_C_COMPILER=${IDE_CC} -DCMAKE_CXX_COMPILER=${IDE_CXX} -DCMAKE_C_FLAGS_DEBUG="-g3 -gdwarf-2" -DCMAKE_CXX_FLAGS_DEBUG="-g3 -gdwarf-2" -DCMAKE_EXPORT_COMPILE_COMMANDS=ON .</preBuildCommand>
         </preBuild>
       </makefileType>
-      <folder path="0/src/assembler/commands">
+      <folder path="0/src/assembler">
         <ccTool>
           <incDir>
-            <pElem>src/assembler</pElem>
+            <pElem>src/assembler/commands</pElem>
+          </incDir>
+        </ccTool>
+      </folder>
+      <folder path="0/src/simulator">
+        <ccTool>
+          <incDir>
+            <pElem>src/simulator</pElem>
           </incDir>
         </ccTool>
       </folder>
       <folder path="0/src/simulator/commands">
         <ccTool>
           <incDir>
-            <pElem>src/commands</pElem>
+            <pElem>src/simulator/commands</pElem>
           </incDir>
         </ccTool>
       </folder>
@@ -119,8 +126,21 @@
           </incDir>
         </ccTool>
       </folder>
+      <folder path="0/test/assembler">
+        <ccTool>
+          <incDir>
+            <pElem>/usr/include/cppunit</pElem>
+            <pElem>/usr/include/cppunit/extensions</pElem>
+            <pElem>test/assembler</pElem>
+          </incDir>
+        </ccTool>
+      </folder>
       <item path="src/assembler/Program.cpp" ex="false" tool="1" flavor2="8">
         <ccTool flags="0">
+          <incDir>
+            <pElem>src/assembler</pElem>
+            <pElem>src</pElem>
+          </incDir>
         </ccTool>
       </item>
       <item path="src/assembler/commands/I_default.cpp"
@@ -128,6 +148,9 @@
             tool="1"
             flavor2="8">
         <ccTool flags="0">
+          <incDir>
+            <pElem>src/assembler</pElem>
+          </incDir>
         </ccTool>
       </item>
       <item path="src/assembler/commands/I_direction.cpp"
@@ -135,22 +158,39 @@
             tool="1"
             flavor2="8">
         <ccTool flags="0">
+          <incDir>
+            <pElem>src</pElem>
+            <pElem>src/assembler</pElem>
+          </incDir>
         </ccTool>
       </item>
       <item path="src/assembler/commands/I_drop.cpp" ex="false" tool="1" flavor2="8">
         <ccTool flags="0">
+          <incDir>
+            <pElem>src/assembler</pElem>
+          </incDir>
         </ccTool>
       </item>
       <item path="src/assembler/commands/I_flip.cpp" ex="false" tool="1" flavor2="8">
         <ccTool flags="0">
+          <incDir>
+            <pElem>src/assembler</pElem>
+          </incDir>
         </ccTool>
       </item>
       <item path="src/assembler/commands/I_mark.cpp" ex="false" tool="1" flavor2="8">
         <ccTool flags="0">
+          <incDir>
+            <pElem>src</pElem>
+            <pElem>build/src/assembler</pElem>
+          </incDir>
         </ccTool>
       </item>
       <item path="src/assembler/commands/I_move.cpp" ex="false" tool="1" flavor2="8">
         <ccTool flags="0">
+          <incDir>
+            <pElem>build/src/assembler</pElem>
+          </incDir>
         </ccTool>
       </item>
       <item path="src/assembler/commands/I_pickup.cpp"
@@ -158,14 +198,24 @@
             tool="1"
             flavor2="8">
         <ccTool flags="0">
+          <incDir>
+            <pElem>src/assembler</pElem>
+          </incDir>
         </ccTool>
       </item>
       <item path="src/assembler/commands/I_sense.cpp" ex="false" tool="1" flavor2="8">
         <ccTool flags="0">
+          <incDir>
+            <pElem>src/assembler</pElem>
+          </incDir>
         </ccTool>
       </item>
       <item path="src/assembler/commands/I_turn.cpp" ex="false" tool="1" flavor2="8">
         <ccTool flags="0">
+          <incDir>
+            <pElem>src</pElem>
+            <pElem>src/assembler</pElem>
+          </incDir>
         </ccTool>
       </item>
       <item path="src/assembler/commands/I_unmark.cpp"
@@ -173,6 +223,10 @@
             tool="1"
             flavor2="8">
         <ccTool flags="0">
+          <incDir>
+            <pElem>src</pElem>
+            <pElem>src/assembler</pElem>
+          </incDir>
         </ccTool>
       </item>
       <item path="src/assembler/commands/Instruction.cpp"
@@ -180,18 +234,30 @@
             tool="1"
             flavor2="8">
         <ccTool flags="0">
+          <incDir>
+            <pElem>build/src/assembler</pElem>
+          </incDir>
         </ccTool>
       </item>
       <item path="src/assembler/commands/Labels.cpp" ex="false" tool="1" flavor2="8">
         <ccTool flags="0">
+          <incDir>
+            <pElem>build/src/assembler</pElem>
+          </incDir>
         </ccTool>
       </item>
       <item path="src/assembler/commands/utility.cpp" ex="false" tool="1" flavor2="8">
         <ccTool flags="0">
+          <incDir>
+            <pElem>src/assembler</pElem>
+          </incDir>
         </ccTool>
       </item>
       <item path="src/assembler/main.cpp" ex="false" tool="1" flavor2="8">
         <ccTool flags="0">
+          <incDir>
+            <pElem>src/assembler</pElem>
+          </incDir>
         </ccTool>
       </item>
       <item path="src/simulator/Bug.cpp" ex="false" tool="1" flavor2="8">
@@ -200,6 +266,9 @@
       </item>
       <item path="src/simulator/Cell.cpp" ex="false" tool="1" flavor2="8">
         <ccTool flags="0">
+          <incDir>
+            <pElem>build/src/simulator</pElem>
+          </incDir>
         </ccTool>
       </item>
       <item path="src/simulator/Marker.cpp" ex="false" tool="1" flavor2="8">
@@ -226,30 +295,88 @@
             tool="1"
             flavor2="8">
         <ccTool flags="0">
+          <incDir>
+            <pElem>/usr/include/cppunit/config</pElem>
+            <pElem>/usr/include/cppunit/portability</pElem>
+            <pElem>/usr/include/cppunit/tools</pElem>
+            <pElem>src</pElem>
+            <pElem>test</pElem>
+          </incDir>
         </ccTool>
       </item>
       <item path="test/assembler/TestProgram.cpp" ex="false" tool="1" flavor2="8">
         <ccTool flags="0">
+          <incDir>
+            <pElem>src/assembler</pElem>
+            <pElem>/usr/include/cppunit/config</pElem>
+            <pElem>/usr/include/cppunit/portability</pElem>
+            <pElem>/usr/include/cppunit/tools</pElem>
+            <pElem>src</pElem>
+            <pElem>test</pElem>
+          </incDir>
         </ccTool>
       </item>
       <item path="test/simulator/BugTest.cpp" ex="false" tool="1" flavor2="8">
         <ccTool flags="0">
+          <incDir>
+            <pElem>/usr/include/cppunit</pElem>
+            <pElem>/usr/include/cppunit/extensions</pElem>
+            <pElem>test/simulator</pElem>
+            <pElem>src/simulator</pElem>
+            <pElem>/usr/include/cppunit/config</pElem>
+            <pElem>/usr/include/cppunit/portability</pElem>
+            <pElem>/usr/include/cppunit/tools</pElem>
+            <pElem>test</pElem>
+          </incDir>
         </ccTool>
       </item>
       <item path="test/simulator/BugTestRunner.cpp" ex="false" tool="1" flavor2="8">
         <ccTool flags="0">
+          <incDir>
+            <pElem>/usr/include/cppunit</pElem>
+            <pElem>/usr/include/cppunit/portability</pElem>
+            <pElem>test/simulator</pElem>
+            <pElem>/usr/include/cppunit/config</pElem>
+            <pElem>/usr/include/cppunit/extensions</pElem>
+            <pElem>test</pElem>
+          </incDir>
         </ccTool>
       </item>
       <item path="test/simulator/CellTest.cpp" ex="false" tool="1" flavor2="8">
         <ccTool flags="0">
+          <incDir>
+            <pElem>/usr/include/cppunit</pElem>
+            <pElem>/usr/include/cppunit/extensions</pElem>
+            <pElem>test/simulator</pElem>
+            <pElem>src/simulator</pElem>
+            <pElem>/usr/include/cppunit/config</pElem>
+            <pElem>/usr/include/cppunit/portability</pElem>
+            <pElem>/usr/include/cppunit/tools</pElem>
+            <pElem>test</pElem>
+          </incDir>
         </ccTool>
       </item>
       <item path="test/simulator/CellTestRunner.cpp" ex="false" tool="1" flavor2="8">
         <ccTool flags="0">
+          <incDir>
+            <pElem>/usr/include/cppunit</pElem>
+            <pElem>/usr/include/cppunit/portability</pElem>
+            <pElem>test/simulator</pElem>
+            <pElem>/usr/include/cppunit/config</pElem>
+            <pElem>/usr/include/cppunit/extensions</pElem>
+            <pElem>test</pElem>
+          </incDir>
         </ccTool>
       </item>
       <item path="test/simulator/I_directionTest.cpp" ex="false" tool="1" flavor2="8">
-        <ccTool flags="0">
+        <ccTool flags="1">
+          <incDir>
+            <pElem>src/assembler</pElem>
+            <pElem>src/assembler/commands</pElem>
+            <pElem>src/simulator</pElem>
+            <pElem>test</pElem>
+            <pElem>src</pElem>
+          </incDir>
         </ccTool>
       </item>
       <item path="test/simulator/I_directionTestRunner.cpp"
@@ -257,10 +384,28 @@
             tool="1"
             flavor2="8">
         <ccTool flags="0">
+          <incDir>
+            <pElem>/usr/include/cppunit</pElem>
+            <pElem>/usr/include/cppunit/portability</pElem>
+            <pElem>test/simulator</pElem>
+            <pElem>/usr/include/cppunit/config</pElem>
+            <pElem>/usr/include/cppunit/extensions</pElem>
+            <pElem>test</pElem>
+          </incDir>
         </ccTool>
       </item>
       <item path="test/simulator/MarkerTest.cpp" ex="false" tool="1" flavor2="8">
         <ccTool flags="0">
+          <incDir>
+            <pElem>/usr/include/cppunit</pElem>
+            <pElem>/usr/include/cppunit/extensions</pElem>
+            <pElem>test/simulator</pElem>
+            <pElem>src/simulator</pElem>
+            <pElem>/usr/include/cppunit/config</pElem>
+            <pElem>/usr/include/cppunit/portability</pElem>
+            <pElem>/usr/include/cppunit/tools</pElem>
+            <pElem>test</pElem>
+          </incDir>
         </ccTool>
       </item>
       <item path="test/simulator/MarkerTestRunner.cpp"
@@ -268,14 +413,40 @@
             tool="1"
             flavor2="8">
         <ccTool flags="0">
+          <incDir>
+            <pElem>/usr/include/cppunit</pElem>
+            <pElem>/usr/include/cppunit/portability</pElem>
+            <pElem>test/simulator</pElem>
+            <pElem>/usr/include/cppunit/config</pElem>
+            <pElem>/usr/include/cppunit/extensions</pElem>
+            <pElem>test</pElem>
+          </incDir>
         </ccTool>
       </item>
       <item path="test/simulator/WorldTest.cpp" ex="false" tool="1" flavor2="8">
         <ccTool flags="0">
+          <incDir>
+            <pElem>/usr/include/cppunit</pElem>
+            <pElem>/usr/include/cppunit/extensions</pElem>
+            <pElem>test/simulator</pElem>
+            <pElem>src/simulator</pElem>
+            <pElem>/usr/include/cppunit/config</pElem>
+            <pElem>/usr/include/cppunit/portability</pElem>
+            <pElem>/usr/include/cppunit/tools</pElem>
+            <pElem>test</pElem>
+          </incDir>
         </ccTool>
       </item>
       <item path="test/simulator/WorldTestRunner.cpp" ex="false" tool="1" flavor2="8">
         <ccTool flags="0">
+          <incDir>
+            <pElem>/usr/include/cppunit</pElem>
+            <pElem>/usr/include/cppunit/portability</pElem>
+            <pElem>test/simulator</pElem>
+            <pElem>/usr/include/cppunit/config</pElem>
+            <pElem>/usr/include/cppunit/extensions</pElem>
+            <pElem>test</pElem>
+          </incDir>
         </ccTool>
       </item>
     </conf>

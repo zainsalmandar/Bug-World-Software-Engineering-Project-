@@ -6,17 +6,11 @@
         <df name="CMakeFiles">
           <df name="3.9.1">
             <df name="CompilerIdC">
-              <df name="tmp">
-              </df>
               <in>CMakeCCompilerId.c</in>
             </df>
             <df name="CompilerIdCXX">
-              <df name="tmp">
-              </df>
               <in>CMakeCXXCompilerId.cpp</in>
             </df>
-          </df>
-          <df name="CMakeTmp">
           </df>
           <df name="Progress">
           </df>
@@ -62,32 +56,18 @@
         <df name="test">
           <df name="CMakeFiles">
             <df name="testBug.dir">
-              <df name="simulator">
-              </df>
             </df>
             <df name="testCell.dir">
-              <df name="simulator">
-              </df>
             </df>
             <df name="testI_direction.dir">
-              <df name="simulator">
-              </df>
             </df>
             <df name="testInstructions.dir">
-              <df name="assembler">
-              </df>
             </df>
             <df name="testMarker.dir">
-              <df name="simulator">
-              </df>
             </df>
             <df name="testProgram.dir">
-              <df name="assembler">
-              </df>
             </df>
             <df name="testWorld.dir">
-              <df name="simulator">
-              </df>
             </df>
           </df>
         </df>
@@ -95,19 +75,11 @@
       <df name="CMakeFiles">
         <df name="3.9.1">
           <df name="CompilerIdC">
-            <df name="tmp">
-            </df>
             <in>CMakeCCompilerId.c</in>
           </df>
           <df name="CompilerIdCXX">
-            <df name="tmp">
-            </df>
             <in>CMakeCXXCompilerId.cpp</in>
           </df>
-        </df>
-        <df name="CMakeTmp">
-        </df>
-        <df name="Progress">
         </df>
         <in>feature_tests.c</in>
         <in>feature_tests.cxx</in>

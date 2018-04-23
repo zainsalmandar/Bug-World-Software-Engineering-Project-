@@ -1,0 +1,44 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/mvitanov/Desktop/phase4/phase3/src/simulator/Bug.h
+ExposedTypes.h
+/home/mvitanov/Desktop/phase4/phase3/src/simulator/ExposedTypes.h
+
+/home/mvitanov/Desktop/phase4/phase3/src/simulator/ExposedTypes.h
+
+/home/mvitanov/Desktop/phase4/phase3/test/simulator/BugTest.cpp
+BugTest.h
+/home/mvitanov/Desktop/phase4/phase3/test/simulator/BugTest.h
+../../src/simulator/Bug.h
+/home/mvitanov/Desktop/phase4/phase3/src/simulator/Bug.h
+
+/home/mvitanov/Desktop/phase4/phase3/test/simulator/BugTest.h
+cppunit/extensions/HelperMacros.h
+-
+
+/home/mvitanov/Desktop/phase4/phase3/test/simulator/BugTestRunner.cpp
+cppunit/BriefTestProgressListener.h
+-
+cppunit/CompilerOutputter.h
+-
+cppunit/extensions/TestFactoryRegistry.h
+-
+cppunit/TestResult.h
+-
+cppunit/TestResultCollector.h
+-
+cppunit/TestRunner.h
+-
+cppunit/Test.h
+-
+cppunit/TestFailure.h
+-
+cppunit/portability/Stream.h
+-
+

@@ -116,9 +116,10 @@ testWorld_EXTERNAL_OBJECTS =
 test/testWorld: test/CMakeFiles/testWorld.dir/simulator/WorldTestRunner.cpp.o
 test/testWorld: test/CMakeFiles/testWorld.dir/simulator/WorldTest.cpp.o
 test/testWorld: test/CMakeFiles/testWorld.dir/build.make
-test/testWorld: src/simulator/liblworld.a
+test/testWorld: src/simulator/liblmarker.a
 test/testWorld: src/simulator/liblcell.a
-test/testWorld: src/simulator/liblprogram.a
+test/testWorld: src/simulator/liblbug.a
+test/testWorld: src/simulator/liblworld.a
 test/testWorld: test/CMakeFiles/testWorld.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/mvitanov/Desktop/phase4/phase3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable testWorld"
 	cd /home/mvitanov/Desktop/phase4/phase3/test && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/testWorld.dir/link.txt --verbose=$(VERBOSE)

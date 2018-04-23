@@ -226,32 +226,6 @@ ldirection/fast:
 .PHONY : ldirection/fast
 
 #=============================================================================
-# Target rules for targets named testI_direction
-
-# Build rule for target.
-testI_direction: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 testI_direction
-.PHONY : testI_direction
-
-# fast build rule for target.
-testI_direction/fast:
-	$(MAKE) -f test/CMakeFiles/testI_direction.dir/build.make test/CMakeFiles/testI_direction.dir/build
-.PHONY : testI_direction/fast
-
-#=============================================================================
-# Target rules for targets named testProgram
-
-# Build rule for target.
-testProgram: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 testProgram
-.PHONY : testProgram
-
-# fast build rule for target.
-testProgram/fast:
-	$(MAKE) -f test/CMakeFiles/testProgram.dir/build.make test/CMakeFiles/testProgram.dir/build
-.PHONY : testProgram/fast
-
-#=============================================================================
 # Target rules for targets named testInstructions
 
 # Build rule for target.
@@ -276,6 +250,19 @@ testCell: cmake_check_build_system
 testCell/fast:
 	$(MAKE) -f test/CMakeFiles/testCell.dir/build.make test/CMakeFiles/testCell.dir/build
 .PHONY : testCell/fast
+
+#=============================================================================
+# Target rules for targets named testProgram
+
+# Build rule for target.
+testProgram: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 testProgram
+.PHONY : testProgram
+
+# fast build rule for target.
+testProgram/fast:
+	$(MAKE) -f test/CMakeFiles/testProgram.dir/build.make test/CMakeFiles/testProgram.dir/build
+.PHONY : testProgram/fast
 
 #=============================================================================
 # Target rules for targets named testBug
@@ -303,19 +290,6 @@ testMarker/fast:
 	$(MAKE) -f test/CMakeFiles/testMarker.dir/build.make test/CMakeFiles/testMarker.dir/build
 .PHONY : testMarker/fast
 
-#=============================================================================
-# Target rules for targets named testWorld
-
-# Build rule for target.
-testWorld: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 testWorld
-.PHONY : testWorld
-
-# fast build rule for target.
-testWorld/fast:
-	$(MAKE) -f test/CMakeFiles/testWorld.dir/build.make test/CMakeFiles/testWorld.dir/build
-.PHONY : testWorld/fast
-
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -333,13 +307,11 @@ help:
 	@echo "... lworld"
 	@echo "... lprogram"
 	@echo "... ldirection"
-	@echo "... testI_direction"
-	@echo "... testProgram"
 	@echo "... testInstructions"
 	@echo "... testCell"
+	@echo "... testProgram"
 	@echo "... testBug"
 	@echo "... testMarker"
-	@echo "... testWorld"
 .PHONY : help
 
 

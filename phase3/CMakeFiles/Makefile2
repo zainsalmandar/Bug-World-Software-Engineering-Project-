@@ -446,24 +446,20 @@ clean: src/simulator/commands/CMakeFiles/ldirection.dir/clean
 # Directory level rules for directory test
 
 # Convenience name for "all" pass in the directory.
-test/all: test/CMakeFiles/testI_direction.dir/all
-test/all: test/CMakeFiles/testProgram.dir/all
 test/all: test/CMakeFiles/testInstructions.dir/all
 test/all: test/CMakeFiles/testCell.dir/all
+test/all: test/CMakeFiles/testProgram.dir/all
 test/all: test/CMakeFiles/testBug.dir/all
 test/all: test/CMakeFiles/testMarker.dir/all
-test/all: test/CMakeFiles/testWorld.dir/all
 
 .PHONY : test/all
 
 # Convenience name for "clean" pass in the directory.
-test/clean: test/CMakeFiles/testI_direction.dir/clean
-test/clean: test/CMakeFiles/testProgram.dir/clean
 test/clean: test/CMakeFiles/testInstructions.dir/clean
 test/clean: test/CMakeFiles/testCell.dir/clean
+test/clean: test/CMakeFiles/testProgram.dir/clean
 test/clean: test/CMakeFiles/testBug.dir/clean
 test/clean: test/CMakeFiles/testMarker.dir/clean
-test/clean: test/CMakeFiles/testWorld.dir/clean
 
 .PHONY : test/clean
 
@@ -473,87 +469,13 @@ test/preinstall:
 .PHONY : test/preinstall
 
 #=============================================================================
-# Target rules for target test/CMakeFiles/testI_direction.dir
-
-# All Build rule for target.
-test/CMakeFiles/testI_direction.dir/all: src/simulator/commands/CMakeFiles/ldirection.dir/all
-	$(MAKE) -f test/CMakeFiles/testI_direction.dir/build.make test/CMakeFiles/testI_direction.dir/depend
-	$(MAKE) -f test/CMakeFiles/testI_direction.dir/build.make test/CMakeFiles/testI_direction.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mvitanov/Desktop/phase4/phase3/CMakeFiles --progress-num=51,52,53 "Built target testI_direction"
-.PHONY : test/CMakeFiles/testI_direction.dir/all
-
-# Include target in all.
-all: test/CMakeFiles/testI_direction.dir/all
-
-.PHONY : all
-
-# Build rule for subdir invocation for target.
-test/CMakeFiles/testI_direction.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/mvitanov/Desktop/phase4/phase3/CMakeFiles 5
-	$(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/testI_direction.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/mvitanov/Desktop/phase4/phase3/CMakeFiles 0
-.PHONY : test/CMakeFiles/testI_direction.dir/rule
-
-# Convenience name for target.
-testI_direction: test/CMakeFiles/testI_direction.dir/rule
-
-.PHONY : testI_direction
-
-# clean rule for target.
-test/CMakeFiles/testI_direction.dir/clean:
-	$(MAKE) -f test/CMakeFiles/testI_direction.dir/build.make test/CMakeFiles/testI_direction.dir/clean
-.PHONY : test/CMakeFiles/testI_direction.dir/clean
-
-# clean rule for target.
-clean: test/CMakeFiles/testI_direction.dir/clean
-
-.PHONY : clean
-
-#=============================================================================
-# Target rules for target test/CMakeFiles/testProgram.dir
-
-# All Build rule for target.
-test/CMakeFiles/testProgram.dir/all: src/assembler/CMakeFiles/asm-test.dir/all
-	$(MAKE) -f test/CMakeFiles/testProgram.dir/build.make test/CMakeFiles/testProgram.dir/depend
-	$(MAKE) -f test/CMakeFiles/testProgram.dir/build.make test/CMakeFiles/testProgram.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mvitanov/Desktop/phase4/phase3/CMakeFiles --progress-num=59,60 "Built target testProgram"
-.PHONY : test/CMakeFiles/testProgram.dir/all
-
-# Include target in all.
-all: test/CMakeFiles/testProgram.dir/all
-
-.PHONY : all
-
-# Build rule for subdir invocation for target.
-test/CMakeFiles/testProgram.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/mvitanov/Desktop/phase4/phase3/CMakeFiles 18
-	$(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/testProgram.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/mvitanov/Desktop/phase4/phase3/CMakeFiles 0
-.PHONY : test/CMakeFiles/testProgram.dir/rule
-
-# Convenience name for target.
-testProgram: test/CMakeFiles/testProgram.dir/rule
-
-.PHONY : testProgram
-
-# clean rule for target.
-test/CMakeFiles/testProgram.dir/clean:
-	$(MAKE) -f test/CMakeFiles/testProgram.dir/build.make test/CMakeFiles/testProgram.dir/clean
-.PHONY : test/CMakeFiles/testProgram.dir/clean
-
-# clean rule for target.
-clean: test/CMakeFiles/testProgram.dir/clean
-
-.PHONY : clean
-
-#=============================================================================
 # Target rules for target test/CMakeFiles/testInstructions.dir
 
 # All Build rule for target.
 test/CMakeFiles/testInstructions.dir/all: src/assembler/CMakeFiles/asm-test.dir/all
 	$(MAKE) -f test/CMakeFiles/testInstructions.dir/build.make test/CMakeFiles/testInstructions.dir/depend
 	$(MAKE) -f test/CMakeFiles/testInstructions.dir/build.make test/CMakeFiles/testInstructions.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mvitanov/Desktop/phase4/phase3/CMakeFiles --progress-num=54,55 "Built target testInstructions"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mvitanov/Desktop/phase4/phase3/CMakeFiles --progress-num=51,52 "Built target testInstructions"
 .PHONY : test/CMakeFiles/testInstructions.dir/all
 
 # Include target in all.
@@ -623,6 +545,43 @@ clean: test/CMakeFiles/testCell.dir/clean
 .PHONY : clean
 
 #=============================================================================
+# Target rules for target test/CMakeFiles/testProgram.dir
+
+# All Build rule for target.
+test/CMakeFiles/testProgram.dir/all: src/assembler/CMakeFiles/asm-test.dir/all
+	$(MAKE) -f test/CMakeFiles/testProgram.dir/build.make test/CMakeFiles/testProgram.dir/depend
+	$(MAKE) -f test/CMakeFiles/testProgram.dir/build.make test/CMakeFiles/testProgram.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mvitanov/Desktop/phase4/phase3/CMakeFiles --progress-num=56,57 "Built target testProgram"
+.PHONY : test/CMakeFiles/testProgram.dir/all
+
+# Include target in all.
+all: test/CMakeFiles/testProgram.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+test/CMakeFiles/testProgram.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mvitanov/Desktop/phase4/phase3/CMakeFiles 18
+	$(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/testProgram.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mvitanov/Desktop/phase4/phase3/CMakeFiles 0
+.PHONY : test/CMakeFiles/testProgram.dir/rule
+
+# Convenience name for target.
+testProgram: test/CMakeFiles/testProgram.dir/rule
+
+.PHONY : testProgram
+
+# clean rule for target.
+test/CMakeFiles/testProgram.dir/clean:
+	$(MAKE) -f test/CMakeFiles/testProgram.dir/build.make test/CMakeFiles/testProgram.dir/clean
+.PHONY : test/CMakeFiles/testProgram.dir/clean
+
+# clean rule for target.
+clean: test/CMakeFiles/testProgram.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
 # Target rules for target test/CMakeFiles/testBug.dir
 
 # All Build rule for target.
@@ -666,7 +625,7 @@ clean: test/CMakeFiles/testBug.dir/clean
 test/CMakeFiles/testMarker.dir/all: src/simulator/CMakeFiles/lmarker.dir/all
 	$(MAKE) -f test/CMakeFiles/testMarker.dir/build.make test/CMakeFiles/testMarker.dir/depend
 	$(MAKE) -f test/CMakeFiles/testMarker.dir/build.make test/CMakeFiles/testMarker.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mvitanov/Desktop/phase4/phase3/CMakeFiles --progress-num=56,57,58 "Built target testMarker"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mvitanov/Desktop/phase4/phase3/CMakeFiles --progress-num=53,54,55 "Built target testMarker"
 .PHONY : test/CMakeFiles/testMarker.dir/all
 
 # Include target in all.
@@ -693,45 +652,6 @@ test/CMakeFiles/testMarker.dir/clean:
 
 # clean rule for target.
 clean: test/CMakeFiles/testMarker.dir/clean
-
-.PHONY : clean
-
-#=============================================================================
-# Target rules for target test/CMakeFiles/testWorld.dir
-
-# All Build rule for target.
-test/CMakeFiles/testWorld.dir/all: src/simulator/CMakeFiles/lcell.dir/all
-test/CMakeFiles/testWorld.dir/all: src/simulator/CMakeFiles/lworld.dir/all
-test/CMakeFiles/testWorld.dir/all: src/simulator/CMakeFiles/lprogram.dir/all
-	$(MAKE) -f test/CMakeFiles/testWorld.dir/build.make test/CMakeFiles/testWorld.dir/depend
-	$(MAKE) -f test/CMakeFiles/testWorld.dir/build.make test/CMakeFiles/testWorld.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mvitanov/Desktop/phase4/phase3/CMakeFiles --progress-num=61,62,63 "Built target testWorld"
-.PHONY : test/CMakeFiles/testWorld.dir/all
-
-# Include target in all.
-all: test/CMakeFiles/testWorld.dir/all
-
-.PHONY : all
-
-# Build rule for subdir invocation for target.
-test/CMakeFiles/testWorld.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/mvitanov/Desktop/phase4/phase3/CMakeFiles 9
-	$(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/testWorld.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/mvitanov/Desktop/phase4/phase3/CMakeFiles 0
-.PHONY : test/CMakeFiles/testWorld.dir/rule
-
-# Convenience name for target.
-testWorld: test/CMakeFiles/testWorld.dir/rule
-
-.PHONY : testWorld
-
-# clean rule for target.
-test/CMakeFiles/testWorld.dir/clean:
-	$(MAKE) -f test/CMakeFiles/testWorld.dir/build.make test/CMakeFiles/testWorld.dir/clean
-.PHONY : test/CMakeFiles/testWorld.dir/clean
-
-# clean rule for target.
-clean: test/CMakeFiles/testWorld.dir/clean
 
 .PHONY : clean
 

@@ -1,0 +1,36 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/mvitanov/Desktop/phase4/phase3/src/simulator/Bug.h
+ExposedTypes.h
+/home/mvitanov/Desktop/phase4/phase3/src/simulator/ExposedTypes.h
+
+/home/mvitanov/Desktop/phase4/phase3/src/simulator/ExposedTypes.h
+
+/home/mvitanov/Desktop/phase4/phase3/src/simulator/Program.cpp
+iostream
+-
+fstream
+-
+vector
+-
+regex
+-
+stdexcept
+-
+Program.h
+/home/mvitanov/Desktop/phase4/phase3/src/simulator/Program.h
+
+/home/mvitanov/Desktop/phase4/phase3/src/simulator/Program.h
+string
+-
+vector
+-
+Bug.h
+/home/mvitanov/Desktop/phase4/phase3/src/simulator/Bug.h
+
