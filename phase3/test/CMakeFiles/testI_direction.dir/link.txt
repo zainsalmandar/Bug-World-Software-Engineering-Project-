@@ -1,0 +1,1 @@
+/usr/bin/g++  -g -O0 -std=c++11 -Wall -fprofile-arcs -ftest-coverage -g3 -gdwarf-2  -fprofile-arcs -ftest-coverage -rdynamic CMakeFiles/testI_direction.dir/simulator/I_directionTestRunner.cpp.o CMakeFiles/testI_direction.dir/simulator/I_directionTest.cpp.o  -o testI_direction -lcppunit ../src/simulator/commands/libldirection.a 

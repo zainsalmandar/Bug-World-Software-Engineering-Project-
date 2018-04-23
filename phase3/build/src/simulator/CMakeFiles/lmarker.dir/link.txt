@@ -1,0 +1,2 @@
+/usr/bin/ar qc liblmarker.a  CMakeFiles/lmarker.dir/Marker.cpp.o
+/usr/bin/ranlib liblmarker.a

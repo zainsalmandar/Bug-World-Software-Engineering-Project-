@@ -1,0 +1,1 @@
+/usr/bin/c++  -g -O0 -std=c++11 -Wall -fprofile-arcs -ftest-coverage  -fprofile-arcs -ftest-coverage -rdynamic CMakeFiles/testMarker.dir/simulator/MarkerTestRunner.cpp.o CMakeFiles/testMarker.dir/simulator/MarkerTest.cpp.o  -o testMarker -lcppunit ../src/simulator/liblmarker.a 

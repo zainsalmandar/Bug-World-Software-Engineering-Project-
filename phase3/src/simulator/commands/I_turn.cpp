@@ -1,14 +1,8 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 
 #include <exception>
 #include <stdexcept>
 
 #include "I_turn.h"
-#include "Bug.h"
 
 
 void I_turn::execute(Bug& b){
@@ -29,5 +23,19 @@ void I_turn::execute(Bug& b){
 }
 
 void I_turn::parse(std::string& args){
-    
+    std::vector<std::string> v;
+
+    char * token;
+
+    token = strtok ( (char*) args.c_str()," ,.-");
+    while (token!= NULL)
+    {
+        std::string str(token);
+        v.push_back(str);
+        token= strtok (NULL, " ,.-");
+    }
+    if(v[0] != "turn")
+        throw std::runtime_error("Wrong instruction called!");
+    this->lr.val = std::stoi (v[1],nullptr,10);
+    this->z.val = std::stoi (v[2],nullptr,10);
 }

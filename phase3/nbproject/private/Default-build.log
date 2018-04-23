@@ -1,0 +1,79 @@
+Scanning dependencies of target asm-test
+[  1%] Building CXX object src/assembler/CMakeFiles/asm-test.dir/Program.cpp.o
+[  3%] Building CXX object src/assembler/CMakeFiles/asm-test.dir/main.cpp.o
+[  4%] Building CXX object src/assembler/CMakeFiles/asm-test.dir/commands/I_default.cpp.o
+[  6%] Building CXX object src/assembler/CMakeFiles/asm-test.dir/commands/I_direction.cpp.o
+[  7%] Building CXX object src/assembler/CMakeFiles/asm-test.dir/commands/I_drop.cpp.o
+[  9%] Building CXX object src/assembler/CMakeFiles/asm-test.dir/commands/I_flip.cpp.o
+[ 11%] Building CXX object src/assembler/CMakeFiles/asm-test.dir/commands/I_mark.cpp.o
+[ 12%] Building CXX object src/assembler/CMakeFiles/asm-test.dir/commands/I_move.cpp.o
+[ 14%] Building CXX object src/assembler/CMakeFiles/asm-test.dir/commands/I_pickup.cpp.o
+[ 15%] Building CXX object src/assembler/CMakeFiles/asm-test.dir/commands/I_sense.cpp.o
+[ 17%] Building CXX object src/assembler/CMakeFiles/asm-test.dir/commands/I_turn.cpp.o
+[ 19%] Building CXX object src/assembler/CMakeFiles/asm-test.dir/commands/I_unmark.cpp.o
+[ 20%] Building CXX object src/assembler/CMakeFiles/asm-test.dir/commands/Instruction.cpp.o
+[ 22%] Building CXX object src/assembler/CMakeFiles/asm-test.dir/commands/Labels.cpp.o
+[ 23%] Building CXX object src/assembler/CMakeFiles/asm-test.dir/commands/utility.cpp.o
+[ 25%] Linking CXX static library libasm-test.a
+[ 25%] Built target asm-test
+Scanning dependencies of target asm
+[ 26%] Building CXX object src/assembler/CMakeFiles/asm.dir/Program.cpp.o
+[ 28%] Building CXX object src/assembler/CMakeFiles/asm.dir/main.cpp.o
+[ 30%] Building CXX object src/assembler/CMakeFiles/asm.dir/commands/I_default.cpp.o
+[ 31%] Building CXX object src/assembler/CMakeFiles/asm.dir/commands/I_direction.cpp.o
+[ 33%] Building CXX object src/assembler/CMakeFiles/asm.dir/commands/I_drop.cpp.o
+[ 34%] Building CXX object src/assembler/CMakeFiles/asm.dir/commands/I_flip.cpp.o
+[ 36%] Building CXX object src/assembler/CMakeFiles/asm.dir/commands/I_mark.cpp.o
+[ 38%] Building CXX object src/assembler/CMakeFiles/asm.dir/commands/I_move.cpp.o
+[ 39%] Building CXX object src/assembler/CMakeFiles/asm.dir/commands/I_pickup.cpp.o
+[ 41%] Building CXX object src/assembler/CMakeFiles/asm.dir/commands/I_sense.cpp.o
+[ 42%] Building CXX object src/assembler/CMakeFiles/asm.dir/commands/I_turn.cpp.o
+[ 44%] Building CXX object src/assembler/CMakeFiles/asm.dir/commands/I_unmark.cpp.o
+[ 46%] Building CXX object src/assembler/CMakeFiles/asm.dir/commands/Instruction.cpp.o
+[ 47%] Building CXX object src/assembler/CMakeFiles/asm.dir/commands/Labels.cpp.o
+[ 49%] Building CXX object src/assembler/CMakeFiles/asm.dir/commands/utility.cpp.o
+[ 50%] Linking CXX executable asm
+[ 50%] Built target asm
+Scanning dependencies of target lmarker
+[ 52%] Building CXX object src/simulator/CMakeFiles/lmarker.dir/Marker.cpp.o
+[ 53%] Linking CXX static library liblmarker.a
+[ 53%] Built target lmarker
+Scanning dependencies of target lbug
+[ 55%] Building CXX object src/simulator/CMakeFiles/lbug.dir/Bug.cpp.o
+[ 57%] Linking CXX static library liblbug.a
+[ 57%] Built target lbug
+Scanning dependencies of target lcell
+[ 58%] Building CXX object src/simulator/CMakeFiles/lcell.dir/Cell.cpp.o
+[ 60%] Linking CXX static library liblcell.a
+[ 60%] Built target lcell
+Scanning dependencies of target lworld
+[ 61%] Building CXX object src/simulator/CMakeFiles/lworld.dir/World.cpp.o
+In file included from /home/mvitanov/Desktop/phase4/phase3/src/simulator/Program.h:7:0,
+                 from /home/mvitanov/Desktop/phase4/phase3/src/simulator/World.h:6,
+                 from /home/mvitanov/Desktop/phase4/phase3/src/simulator/World.cpp:6:
+/home/mvitanov/Desktop/phase4/phase3/src/simulator/commands/Instruction.h:16:9: error: ‘World’ does not name a type
+         World w;
+         ^~~~~
+/home/mvitanov/Desktop/phase4/phase3/src/simulator/commands/Instruction.h:19:26: error: expected ‘)’ before ‘&’ token
+         Instruction(World& newworld) {w = newworld;}
+                          ^
+/home/mvitanov/Desktop/phase4/phase3/src/simulator/commands/Instruction.h:20:23: error: ‘World’ has not been declared
+         void setWorld(World& newworld) {w = newworld;}
+                       ^~~~~
+/home/mvitanov/Desktop/phase4/phase3/src/simulator/commands/Instruction.h:21:9: error: ‘World’ does not name a type
+         World getWorld() {return w;}
+         ^~~~~
+/home/mvitanov/Desktop/phase4/phase3/src/simulator/commands/Instruction.h: In constructor ‘Instruction::Instruction()’:
+/home/mvitanov/Desktop/phase4/phase3/src/simulator/commands/Instruction.h:18:30: error: ‘class Instruction’ has no member named ‘w’
+         Instruction() {this->w = NULL;}
+                              ^
+/home/mvitanov/Desktop/phase4/phase3/src/simulator/commands/Instruction.h: In member function ‘void Instruction::setWorld(int&)’:
+/home/mvitanov/Desktop/phase4/phase3/src/simulator/commands/Instruction.h:20:41: error: ‘w’ was not declared in this scope
+         void setWorld(World& newworld) {w = newworld;}
+                                         ^
+src/simulator/CMakeFiles/lworld.dir/build.make:62: recipe for target 'src/simulator/CMakeFiles/lworld.dir/World.cpp.o' failed
+make[2]: *** [src/simulator/CMakeFiles/lworld.dir/World.cpp.o] Error 1
+CMakeFiles/Makefile2:321: recipe for target 'src/simulator/CMakeFiles/lworld.dir/all' failed
+make[1]: *** [src/simulator/CMakeFiles/lworld.dir/all] Error 2
+Makefile:94: recipe for target 'all' failed
+make: *** [all] Error 2

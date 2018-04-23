@@ -1,20 +1,16 @@
 /*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-
-/* 
  * File:   I_flip.h
  * Author: mvitanov
  *
- * Created on March 21, 2018, 9:32 PM
  */
 
 #ifndef I_FLIP_H
 #define I_FLIP_H
 
 #include "Instruction.h"
+#include "../ExposedTypes.h"
+#include "../World.h"
+#include "../Bug.h"
 
 class I_flip: public Instruction {
     private:
@@ -23,10 +19,11 @@ class I_flip: public Instruction {
         state_t y;
         int seed;
     public:
+        I_flip() : Instruction() {p = seed = 0; x = NULL; y = NULL;}
+        I_flip(World &w) : Instruction(w) {p = seed = 0; x = NULL; y = NULL;}
         void execute(Bug& b);
         void parse(std::string& args);
         int randomint();
 };
 
 #endif /* I_FLIP_H */
-

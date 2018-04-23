@@ -1,0 +1,2 @@
+/usr/bin/ar qc liblbug.a  CMakeFiles/lbug.dir/Bug.cpp.o
+/usr/bin/ranlib liblbug.a

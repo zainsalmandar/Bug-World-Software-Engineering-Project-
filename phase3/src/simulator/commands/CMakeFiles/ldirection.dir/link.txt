@@ -1,0 +1,2 @@
+/usr/bin/ar qc libldirection.a  CMakeFiles/ldirection.dir/I_direction.cpp.o
+/usr/bin/ranlib libldirection.a

@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 
 #include <iostream>
 #include <exception>
@@ -10,7 +5,7 @@
 #include <cstring>
 
 #include "I_pickup.h"
-#include "Cell.h"
+#include "../Cell.h"
 
 void I_pickup::execute(Bug& b){
      //Pick up food from the current cell  and go to state x;

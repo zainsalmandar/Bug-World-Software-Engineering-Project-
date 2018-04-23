@@ -1,9 +1,3 @@
-/*
- * I_mark Implementation
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 
 #include <iostream>
 #include <exception>
@@ -11,7 +5,6 @@
 #include <cstring>
 
 #include "I_mark.h"
-#include "World.h"
 
 void I_mark::execute(Bug& b){
     //set mark m and go to state z
@@ -39,5 +32,5 @@ void I_mark::parse(std::string& args){
         throw std::runtime_error("Wrong instruction called!");
     int m= std::stoi (v[1],nullptr,10);
     this->z.val = std::stoi (v[2],nullptr,10);
-    
+
 }

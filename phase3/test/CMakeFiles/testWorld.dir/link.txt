@@ -1,0 +1,1 @@
+/usr/bin/g++  -g -O0 -std=c++11 -Wall -fprofile-arcs -ftest-coverage -g3 -gdwarf-2  -fprofile-arcs -ftest-coverage -rdynamic CMakeFiles/testWorld.dir/simulator/WorldTestRunner.cpp.o CMakeFiles/testWorld.dir/simulator/WorldTest.cpp.o  -o testWorld -lcppunit ../src/simulator/liblworld.a ../src/simulator/liblcell.a ../src/simulator/liblprogram.a 

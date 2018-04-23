@@ -1,9 +1,3 @@
-/*
- * I_flip Implementation
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 
 #include <iostream>
 #include <cstdlib>
@@ -13,13 +7,12 @@
 #include <cstring>
 
 #include "I_flip.h"
-#include "Bug.h"
 
 void I_flip::execute(Bug& b) {
     int randomI =randomint();
     if(randomI == 0)
         b.set_state(x);
-    else 
+    else
         b.set_state(y);
 }
 

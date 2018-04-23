@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 
 #include <iostream>
 #include <exception>
@@ -10,12 +5,11 @@
 #include <cstring>
 
 #include "I_direction.h"
-#include "Bug.h"
 
 void I_direction::execute(Bug& b) {
     if(b.get_direction().val == this->d.val)
         b.set_state(this->x);
-    else 
+    else
         b.set_state(this->y);
 }
 

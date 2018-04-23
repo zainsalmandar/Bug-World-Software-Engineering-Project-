@@ -1,9 +1,3 @@
-/*
- * I_unmark implementation
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 
 #include <iostream>
 #include <exception>
@@ -11,8 +5,7 @@
 #include <cstring>
 
 #include "I_unmark.h"
-#include "Marker.h"
-#include "Bug.h"
+#include "../Marker.h"
 
 void I_unmark::execute(Bug& b){
     //unmark m and go to state z

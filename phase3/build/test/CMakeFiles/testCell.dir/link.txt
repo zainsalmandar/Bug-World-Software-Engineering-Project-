@@ -1,0 +1,1 @@
+/usr/bin/c++  -g -O0 -std=c++11 -Wall -fprofile-arcs -ftest-coverage  -fprofile-arcs -ftest-coverage -rdynamic CMakeFiles/testCell.dir/simulator/CellTestRunner.cpp.o CMakeFiles/testCell.dir/simulator/CellTest.cpp.o  -o testCell -lcppunit ../src/simulator/liblcell.a ../src/simulator/liblbug.a ../src/simulator/liblmarker.a 

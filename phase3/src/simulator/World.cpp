@@ -56,7 +56,8 @@ void World::load(const std::string& world, const std::string& black_bug_file, co
         
         
         //count red and black bugs
-        int redBugs = blackBugs = 0;
+        redBugs = 0;
+        blackBugs = 0;
         
         int x, y;
         x = y = 0;
@@ -105,8 +106,8 @@ void World::load(const std::string& world, const std::string& black_bug_file, co
         }
        
         programs = new Program*[2];
-        programs[0]  = new Program(black_bug_file);
-        programs[1]  = new Program(red_bug_file);
+        programs[0]  = new Program(black_bug_file, black_progId);
+        programs[1]  = new Program(red_bug_file, red_progId);
     }
 }
 

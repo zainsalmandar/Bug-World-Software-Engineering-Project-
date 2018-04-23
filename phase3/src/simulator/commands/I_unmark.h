@@ -1,29 +1,27 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 
-/* 
+/*
  * File:   I_unmark.h
  * Author: mvitanov
  *
- * Created on March 21, 2018, 9:51 PM
  */
 
 #ifndef I_UNMARK_H
 #define I_UNMARK_H
 
 #include "Instruction.h"
+#include "../ExposedTypes.h"
+#include "../World.h"
+#include "../Bug.h"
 
 class I_unmark: public Instruction {
     private:
-	int m;
-	state_t z;
+	      int m;
+	      state_t z;
     public:
-	void execute(Bug& b);
-	void parse(std::string& args);
+        I_unmark() : Instruction() {m = 0; z = NULL;}
+        I_unmark(World &w) : Instruction(w) {m = 0; z = NULL;}
+	      void execute(Bug& b);
+	      void parse(std::string& args);
 };
 
 #endif /* I_UNMARK_H */
-

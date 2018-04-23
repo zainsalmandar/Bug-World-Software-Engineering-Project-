@@ -1,24 +1,17 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-
 #include <iostream>
 #include <exception>
 #include <vector>
 #include <cstring>
 
 #include "I_move.h"
-#include "World.h"
 
 void I_move::execute(Bug& b){
-    
+
     position_t temp = w.adjacent(b.get_direction(),b.get_position());
     position_t bug_pos = b.get_position();
     Cell *c = w.get_cell(temp);
     Cell *current = this->w.get_cell(bug_pos);
-    
+
     if (c->has_obstruction())
         b.set_state(y);
     else {

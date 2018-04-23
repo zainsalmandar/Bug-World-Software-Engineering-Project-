@@ -1,0 +1,1 @@
+/usr/bin/c++  -g -O0 -std=c++11 -Wall -fprofile-arcs -ftest-coverage  -fprofile-arcs -ftest-coverage -rdynamic CMakeFiles/testProgram.dir/assembler/TestProgram.cpp.o  -o testProgram -lcppunit -ldl -ldl ../src/assembler/libasm-test.a 

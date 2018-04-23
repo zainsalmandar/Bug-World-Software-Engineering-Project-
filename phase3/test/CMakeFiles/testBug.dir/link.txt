@@ -1,0 +1,1 @@
+/usr/bin/g++  -g -O0 -std=c++11 -Wall -fprofile-arcs -ftest-coverage -g3 -gdwarf-2  -fprofile-arcs -ftest-coverage -rdynamic CMakeFiles/testBug.dir/simulator/BugTestRunner.cpp.o CMakeFiles/testBug.dir/simulator/BugTest.cpp.o  -o testBug -lcppunit ../src/simulator/liblbug.a 

@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configurationDescriptor version="100">
+  <logicalFolder name="root" displayName="root" projectFiles="true" kind="ROOT">
+    <df root="." name="0">
+      <df name="build">
+        <df name="CMakeFiles">
+          <df name="3.9.1">
+            <df name="CompilerIdC">
+              <df name="tmp">
+              </df>
+              <in>CMakeCCompilerId.c</in>
+            </df>
+            <df name="CompilerIdCXX">
+              <df name="tmp">
+              </df>
+              <in>CMakeCXXCompilerId.cpp</in>
+            </df>
+          </df>
+          <df name="CMakeTmp">
+          </df>
+          <df name="Progress">
+          </df>
+          <in>feature_tests.c</in>
+          <in>feature_tests.cxx</in>
+        </df>
+        <df name="src">
+          <df name="assembler">
+            <df name="CMakeFiles">
+              <df name="asm-test.dir">
+                <df name="commands">
+                </df>
+              </df>
+              <df name="asm.dir">
+                <df name="commands">
+                </df>
+              </df>
+            </df>
+          </df>
+          <df name="CMakeFiles">
+          </df>
+          <df name="simulator">
+            <df name="CMakeFiles">
+              <df name="lbug.dir">
+              </df>
+              <df name="lcell.dir">
+              </df>
+              <df name="lmarker.dir">
+              </df>
+              <df name="lprogram.dir">
+              </df>
+              <df name="lworld.dir">
+              </df>
+            </df>
+            <df name="commands">
+              <df name="CMakeFiles">
+                <df name="ldirection.dir">
+                </df>
+              </df>
+            </df>
+          </df>
+        </df>
+        <df name="test">
+          <df name="CMakeFiles">
+            <df name="testBug.dir">
+              <df name="simulator">
+              </df>
+            </df>
+            <df name="testCell.dir">
+              <df name="simulator">
+              </df>
+            </df>
+            <df name="testI_direction.dir">
+              <df name="simulator">
+              </df>
+            </df>
+            <df name="testInstructions.dir">
+              <df name="assembler">
+              </df>
+            </df>
+            <df name="testMarker.dir">
+              <df name="simulator">
+              </df>
+            </df>
+            <df name="testProgram.dir">
+              <df name="assembler">
+              </df>
+            </df>
+            <df name="testWorld.dir">
+              <df name="simulator">
+              </df>
+            </df>
+          </df>
+        </df>
+      </df>
+      <df name="CMakeFiles">
+        <df name="3.9.1">
+          <df name="CompilerIdC">
+            <df name="tmp">
+            </df>
+            <in>CMakeCCompilerId.c</in>
+          </df>
+          <df name="CompilerIdCXX">
+            <df name="tmp">
+            </df>
+            <in>CMakeCXXCompilerId.cpp</in>
+          </df>
+        </df>
+        <df name="CMakeTmp">
+        </df>
+        <df name="Progress">
+        </df>
+        <in>feature_tests.c</in>
+        <in>feature_tests.cxx</in>
+      </df>
+      <df name="src">
+        <df name="assembler">
+          <df name="CMakeFiles">
+            <df name="asm-test.dir">
+              <df name="commands">
+              </df>
+            </df>
+            <df name="asm.dir">
+              <df name="commands">
+              </df>
+            </df>
+          </df>
+          <df name="commands">
+            <in>I_default.cpp</in>
+            <in>I_default.h</in>
+            <in>I_direction.cpp</in>
+            <in>I_direction.h</in>
+            <in>I_drop.cpp</in>
+            <in>I_drop.h</in>
+            <in>I_flip.cpp</in>
+            <in>I_flip.h</in>
+            <in>I_mark.cpp</in>
+            <in>I_mark.h</in>
+            <in>I_move.cpp</in>
+            <in>I_move.h</in>
+            <in>I_pickup.cpp</in>
+            <in>I_pickup.h</in>
+            <in>I_sense.cpp</in>
+            <in>I_sense.h</in>
+            <in>I_turn.cpp</in>
+            <in>I_turn.h</in>
+            <in>I_unmark.cpp</in>
+            <in>I_unmark.h</in>
+            <in>Instruction.cpp</in>
+            <in>Instruction.h</in>
+            <in>Labels.cpp</in>
+            <in>Labels.h</in>
+            <in>utility.cpp</in>
+            <in>utility.h</in>
+          </df>
+          <in>Program.cpp</in>
+          <in>Program.h</in>
+          <in>main.cpp</in>
+        </df>
+        <df name="CMakeFiles">
+        </df>
+        <df name="simulator">
+          <df name="CMakeFiles">
+            <df name="lbug.dir">
+            </df>
+            <df name="lcell.dir">
+            </df>
+            <df name="lmarker.dir">
+            </df>
+            <df name="lprogram.dir">
+            </df>
+            <df name="lworld.dir">
+            </df>
+          </df>
+          <df name="commands">
+            <df name="CMakeFiles">
+              <df name="ldirection.dir">
+              </df>
+            </df>
+            <in>I_direction.cpp</in>
+            <in>I_direction.h</in>
+            <in>I_drop.cpp</in>
+            <in>I_drop.h</in>
+            <in>I_flip.cpp</in>
+            <in>I_flip.h</in>
+            <in>I_mark.cpp</in>
+            <in>I_mark.h</in>
+            <in>I_move.cpp</in>
+            <in>I_move.h</in>
+            <in>I_pickup.cpp</in>
+            <in>I_pickup.h</in>
+            <in>I_sense.cpp</in>
+            <in>I_sense.h</in>
+            <in>I_turn.cpp</in>
+            <in>I_turn.h</in>
+            <in>I_unmark.cpp</in>
+            <in>I_unmark.h</in>
+            <in>Instruction.h</in>
+          </df>
+          <in>Bug.cpp</in>
+          <in>Bug.h</in>
+          <in>Cell.cpp</in>
+          <in>Cell.h</in>
+          <in>ExposedTypes.h</in>
+          <in>Marker.cpp</in>
+          <in>Marker.h</in>
+          <in>Program.cpp</in>
+          <in>Program.h</in>
+          <in>World.cpp</in>
+          <in>World.h</in>
+        </df>
+        <in>properties.h</in>
+      </df>
+      <df name="test">
+        <df name="assembler">
+          <in>TestInstructions.cpp</in>
+          <in>TestProgram.cpp</in>
+        </df>
+        <df name="CMakeFiles">
+          <df name="testBug.dir">
+            <df name="simulator">
+            </df>
+          </df>
+          <df name="testCell.dir">
+            <df name="simulator">
+            </df>
+          </df>
+          <df name="testI_direction.dir">
+            <df name="simulator">
+            </df>
+          </df>
+          <df name="testInstructions.dir">
+            <df name="assembler">
+            </df>
+          </df>
+          <df name="testMarker.dir">
+            <df name="simulator">
+            </df>
+          </df>
+          <df name="testProgram.dir">
+            <df name="assembler">
+            </df>
+          </df>
+          <df name="testWorld.dir">
+            <df name="simulator">
+            </df>
+          </df>
+        </df>
+        <df name="simulator">
+          <in>BugTest.cpp</in>
+          <in>BugTest.h</in>
+          <in>BugTestRunner.cpp</in>
+          <in>CellTest.cpp</in>
+          <in>CellTest.h</in>
+          <in>CellTestRunner.cpp</in>
+          <in>I_directionTest.cpp</in>
+          <in>I_directionTest.h</in>
+          <in>I_directionTestRunner.cpp</in>
+          <in>MarkerTest.cpp</in>
+          <in>MarkerTest.h</in>
+          <in>MarkerTestRunner.cpp</in>
+          <in>WorldTest.cpp</in>
+          <in>WorldTest.h</in>
+          <in>WorldTestRunner.cpp</in>
+        </df>
+      </df>
+    </df>
+  </logicalFolder>
+  <projectmakefile>Makefile</projectmakefile>
+  <confs>
+    <conf name="Default" type="0">
+      <toolsSet>
+        <developmentServer>localhost</developmentServer>
+        <platform>2</platform>
+      </toolsSet>
+      <compile>
+        <compiledirpicklist>
+          <compiledirpicklistitem>.</compiledirpicklistitem>
+          <compiledirpicklistitem>${AUTO_FOLDER}</compiledirpicklistitem>
+        </compiledirpicklist>
+        <compiledir>${AUTO_FOLDER}</compiledir>
+        <compilecommandpicklist>
+          <compilecommandpicklistitem>${MAKE} ${ITEM_NAME}.o</compilecommandpicklistitem>
+          <compilecommandpicklistitem>${AUTO_COMPILE}</compilecommandpicklistitem>
+        </compilecommandpicklist>
+        <compilecommand>${AUTO_COMPILE}</compilecommand>
+      </compile>
+      <dbx_gdbdebugger version="1">
+        <gdb_pathmaps>
+        </gdb_pathmaps>
+        <gdb_interceptlist>
+          <gdbinterceptoptions gdb_all="false" gdb_unhandled="true" gdb_unexpected="true"/>
+        </gdb_interceptlist>
+        <gdb_options>
+          <DebugOptions>
+          </DebugOptions>
+        </gdb_options>
+        <gdb_buildfirst gdb_buildfirst_overriden="false" gdb_buildfirst_old="false"/>
+      </dbx_gdbdebugger>
+      <nativedebugger version="1">
+        <engine>gdb</engine>
+      </nativedebugger>
+      <runprofile version="9">
+        <runcommandpicklist>
+          <runcommandpicklistitem>"${OUTPUT_PATH}"</runcommandpicklistitem>
+        </runcommandpicklist>
+        <runcommand>"${OUTPUT_PATH}"</runcommand>
+        <rundir>.</rundir>
+        <buildfirst>false</buildfirst>
+        <terminal-type>0</terminal-type>
+        <remove-instrumentation>0</remove-instrumentation>
+        <environment>
+        </environment>
+      </runprofile>
+    </conf>
+  </confs>
+</configurationDescriptor>

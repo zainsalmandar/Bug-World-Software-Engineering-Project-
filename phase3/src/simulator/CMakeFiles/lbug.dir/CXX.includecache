@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/mvitanov/Desktop/phase4/phase3/src/simulator/Bug.cpp
+stdexcept
+-
+Bug.h
+/home/mvitanov/Desktop/phase4/phase3/src/simulator/Bug.h
+
+/home/mvitanov/Desktop/phase4/phase3/src/simulator/Bug.h
+ExposedTypes.h
+/home/mvitanov/Desktop/phase4/phase3/src/simulator/ExposedTypes.h
+
+/home/mvitanov/Desktop/phase4/phase3/src/simulator/ExposedTypes.h
+
