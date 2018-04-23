@@ -113,7 +113,10 @@ void World::load(const std::string& world, const std::string& black_bug_file, co
 }
 
 void World::execute_cycle() {
-    
+return get_progid();
+return state();
+return exectute()
+    //execute has to be implemented
 }
 
 Cell* World::get_cell(position_t& pos) const {
