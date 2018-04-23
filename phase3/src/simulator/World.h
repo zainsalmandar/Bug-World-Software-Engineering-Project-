@@ -34,5 +34,10 @@ public:
     
     void error(const std::string& msg) const;
     void log(std::string& format) const;
+    
+    int get_progid(string s) {
+    std::system(s);
+    std::cout << std::ifstream(s).rdbuf();
+    }
 };
 #endif /* WORLD_H */
