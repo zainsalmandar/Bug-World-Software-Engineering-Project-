@@ -84,3 +84,18 @@ void Program::step(Bug b){
 	}
 	return;*/
 }
+
+ int get_progid(extern std::string s) {
+        std::system(s.c_str()); //parse not defined yet
+        std::cout << std::ifstream(s.c_str()).rdbuf(); }
+    
+//read not defined yet 
+void step(extern string s) {
+    /* tstate get_state(s) { 
+    while (read("  ")) { read not defined yet
+    x = read(s);
+    x+=1;
+    }}} */ }
+
+void execute(extern string s) {} 
+//has to be defined
